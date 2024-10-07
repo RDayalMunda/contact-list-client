@@ -1,0 +1,61 @@
+@import './modal.css';
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.main-sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  transition: 500ms;
+}
+
+.main-sidebar .sidebar-item {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  transition: 500ms;
+}
+
+.main-sidebar .sidebar-item.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.main-sidebar .sidebar-item:hover:not(.active) {
+  background-color: #0007;
+  color: #fff;
+}
+
+div.main-content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .main-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .main-sidebar .sidebar-item {
+    float: left;
+  }
+  div.main-content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
