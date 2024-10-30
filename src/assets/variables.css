@@ -1,0 +1,6 @@
+:root {
+    --button-bg: #eee;
+    --button-bg-hover: #ccc;
+    --button-text: #333;
+    --button-border: 1px solid #ccc;
+}

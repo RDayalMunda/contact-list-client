@@ -1,17 +1,20 @@
 <template>
-  <modal-wrapper id="login-modal">
-    <div>
-      <input v-model="credentials.name" />
-      <input v-model="credentials.password" />
-      <button>Login</button>
-    </div>
-  </modal-wrapper>
+  <div>
+    <pre>{{credentials}}</pre>
+    <input-field
+      label="Username"
+      placeholder="Enter username"
+      v-model="credentials.name"
+    />
+    <input v-model="credentials.password" />
+    <button>Login</button>
+  </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
+import InputField from '../common/inputField.vue';
 
-import ModalWrapper from '../common/ModalWrapper.vue';
 const credentials = ref({
   name: '',
   password: ''

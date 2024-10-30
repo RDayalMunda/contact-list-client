@@ -1,10 +1,10 @@
 <template>
   <sidebar-component />
   <router-view />
-  <login-component />
+  <login-modal />
 </template>
 <script setup>
 import SidebarComponent from './components/layout/SidebarComponent.vue';
-import LoginComponent from './components/auth/LoginComponent.vue';
+import LoginModal from './components/auth/LoginModal.vue';
 
 </script>

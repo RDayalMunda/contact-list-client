@@ -1,4 +1,15 @@
 @import './modal.css';
+@import './variables.css'
+.fs-3 {
+  font-size: 16px;
+}
+.fs-4 {
+  font-size: 20px;
+}
+.fs-5 {
+  font-size: 24px;
+}
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -36,7 +47,6 @@ body {
 div.main-content {
   margin-left: 200px;
   padding: 1px 16px;
-  height: 1000px;
 }
 
 @media screen and (max-width: 700px) {
@@ -58,4 +68,21 @@ div.main-content {
     text-align: center;
     float: none;
   }
+}
+
+.button {
+  cursor: pointer;
+  min-height: 28px;
+  min-width: 28px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+.button:hover{
+}
+
+.disabled {
+  cursor: not-allowed;
 }

@@ -4,9 +4,11 @@
     <div class="modal-content">
       <div class="modal-title">
         <span>Modal title</span>
-        <span class="close" @click="hide">&times;</span>
+        <span class="button close fs-5" @click="hide">&times;</span>
       </div>
-      <slot />
+      <div class="modal-body">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
